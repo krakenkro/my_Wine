@@ -1,0 +1,49 @@
+.header {
+  &__actions {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-hamburger {
+      height: 16px;
+      right: 21px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      cursor: pointer;
+      span {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: #ffffff;
+      }
+      span.long {
+        width: 36px;
+      }
+    }
+  }
+  &__menu {
+    display: flex;
+    border: white;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+
+  border: 1px;
+  width: 100%;
+  border-style: solid none solid none;
+  border-color: white;
+  padding: 25px;
+  &__item {
+    font-size: 16px;
+    line-height: 9px;
+    @include cinzel;
+  }
+}

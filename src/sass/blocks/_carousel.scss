@@ -1,0 +1,57 @@
+.carousel {
+  padding-top: 140px;
+  background-color: #18191a;
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    grid-template-rows: repeat(1, minmax(470, auto));
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__title {
+    @include poppins;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.35em;
+  }
+  &__name {
+    @include cinzel;
+    color: $main-color;
+    font-size: 74px;
+    line-height: 74px;
+    margin-top: 40px;
+  }
+  &__descr {
+    @include poppins;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 50px;
+    letter-spacing: 1px;
+  }
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 230px));
+    grid-auto-rows: minmax(69px, auto);
+    margin-top: 60px;
+    column-gap: 60px;
+  }
+  &__button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    width: 233px;
+    height: 69px;
+    color: #ffffff;
+    border: 1px $main-color solid;
+    cursor: pointer;
+    &-yellow {
+      background-color: $main-color;
+      color: #1f1f1f;
+      border: none;
+    }
+  }
+}
