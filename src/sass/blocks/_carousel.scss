@@ -48,11 +48,38 @@
     color: #ffffff;
     border: 1px $main-color solid;
     cursor: pointer;
+    transition: 0.5s all;
     &-yellow {
       background-color: $main-color;
       color: #1f1f1f;
       border: none;
+      &:hover {
+        background-color: #000000;
+        color: #ffffff;
+        border: 1px $main-color solid;
+      }
     }
+    &-black {
+      &:hover {
+        background-color: $main-color;
+        color: #1f1f1f;
+      }
+    }
+    // .btnPeach,
+    // .btnPeach.btnWhite:hover,
+    // .btnPeach.btnWhite:active,
+    // .btnPeach.btnWhite:focus {
+    //   width: 179px;
+    //   height: 56px;
+    //   border-radius: 4px;
+    //   background-color: #fd665e;
+    //   color: #ffffff;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   box-sizing: border-box;
+    //   border: 2px #fd665e solid;
+    // }
   }
   &__picture {
     position: relative;

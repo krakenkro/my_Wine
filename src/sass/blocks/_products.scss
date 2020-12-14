@@ -1,0 +1,74 @@
+.products {
+  padding-top: 140px;
+  &__tabs {
+    margin: 85px auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 2px;
+    width: 420px;
+    margin-bottom: 50px;
+  }
+  &__tab {
+    @include poppins;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: 0.5s all;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  &__content {
+    display: grid;
+    // grid-template: repeat(2, minmax(450px, auto)) / repeat(4, 270px);
+    // grid-auto-rows: minmax(450px, auto);
+    grid-template-columns: repeat(auto-fit, 270px);
+    row-gap: 97px;
+  }
+  &-item {
+    &__img {
+      display: block;
+      margin: 0 auto;
+    }
+    &__sale {
+      width: 80px;
+      height: 40px;
+      background-color: $main-color;
+      color: #000000;
+      @include poppins;
+      font-size: 14px;
+      line-height: 38px;
+      text-align: center;
+    }
+    &__subtitle {
+      margin-top: 18px;
+      @include cinzel;
+      color: #ffffff;
+      font-size: 24px;
+      line-height: 24px;
+      text-align: center;
+    }
+    &__prices {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $main-color;
+    }
+    &__old-price {
+      @include poppins;
+      font-size: 16px;
+      line-height: 40px;
+      text-decoration: line-through;
+    }
+    &__price {
+      @include poppins;
+      font-size: 24px;
+      line-height: 36px;
+      margin-left: 5px;
+    }
+  }
+}
