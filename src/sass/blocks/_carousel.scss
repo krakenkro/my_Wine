@@ -54,4 +54,33 @@
       border: none;
     }
   }
+  &__picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      width: 374px;
+      height: 374px;
+      border-radius: 50%;
+      background: #e2b024;
+      top: 27%;
+    }
+
+    img {
+      z-index: 4;
+      background: none;
+    }
+  }
+  &__rectangle {
+    position: absolute;
+    width: 530px;
+    height: 498px;
+    top: 17%;
+    border: 10px solid #e2b024;
+  }
 }
