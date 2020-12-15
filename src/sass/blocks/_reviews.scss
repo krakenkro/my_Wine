@@ -1,0 +1,64 @@
+.reviews {
+  padding: 150px 0 120px 0;
+  background: url(../img/bg_review.png) no-repeat 50% / cover;
+  &__item {
+    max-width: 85%;
+    margin: 0 auto;
+    &-photo {
+      margin-top: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-author {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-top: 25px;
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      line-height: 24px;
+      text-align: center;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    &-text {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+      letter-spacing: 2px;
+    }
+  }
+  &__slider {
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      li {
+        list-style: none;
+        margin: 0 10px;
+
+        button {
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          font-size: 0;
+          border: none;
+        }
+      }
+      li.slick-active {
+        button {
+          border: none;
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 .title {
   @include cinzel;
   text-align: center;
+
   span {
     color: $main-color;
   }

@@ -6,3 +6,19 @@
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
+@mixin yellow_link {
+  text-align: center;
+  a {
+    @include cinzel;
+    color: $main-color;
+    font-size: 16px;
+    line-height: 9px;
+    border-bottom: 1px solid $main-color;
+    padding-bottom: 2px;
+    &:hover {
+      color: #ffffff;
+      border: none;
+      transition: 0.5s all;
+    }
+  }
+}

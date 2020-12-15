@@ -1,5 +1,5 @@
 .products {
-  padding-top: 140px;
+  padding: 140px 0 140px 0;
   &__tabs {
     margin: 85px auto;
     list-style: none;
@@ -24,15 +24,17 @@
   }
   &__content {
     display: grid;
-    // grid-template: repeat(2, minmax(450px, auto)) / repeat(4, 270px);
-    // grid-auto-rows: minmax(450px, auto);
-    grid-template-columns: repeat(auto-fit, 270px);
-    row-gap: 97px;
+    grid-template: repeat(2, minmax(450px, auto)) / repeat(4, 270px);
+    grid-auto-rows: minmax(450px, auto);
+    row-gap: 90px;
+    column-gap: 20px;
   }
   &-item {
     &__img {
-      display: block;
-      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 360px;
     }
     &__sale {
       width: 80px;
@@ -70,5 +72,9 @@
       line-height: 36px;
       margin-left: 5px;
     }
+  }
+  &__link {
+    margin-top: 65px;
+    @include yellow_link;
   }
 }
