@@ -7,3 +7,25 @@
 .slick-slider {
   min-width: 0;
 }
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    list-style: none;
+    margin: 0 10px;
+    button {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      font-size: 0;
+      border: none;
+    }
+  }
+  li.slick-active {
+    button {
+      border: none;
+      background-color: $main-color;
+    }
+  }
+}
