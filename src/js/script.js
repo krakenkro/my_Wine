@@ -1,21 +1,21 @@
 $(document).ready(function () {
   $(".reviews__slider").slick({
     adaptiveHeight: false,
-    speed: 2000,
+    speed: 2500,
     arrows: false,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
   });
   $(".offers__slider").slick({
     adaptiveHeight: true,
     slidesToShow: 3,
     centerMode: true,
-    speed: 2000,
+    speed: 2500,
     arrows: false,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
     focusOnSelect: false,
   });
 });

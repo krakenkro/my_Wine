@@ -10,20 +10,24 @@
     <header class="header">
       <div class="header__actions">
         <div class="container">
-          <div class="flex_container">
-            <a href="#">We Ship Everywhere! Free In The Us!</a>
+          <div class="header__wrapper">
+            <div class="header__actions-left">
+              <a href="#">We Ship Everywhere! Free In The Us!</a>
+            </div>
             <div class="header__actions-logo">
               <img src="icons/main/header_logo.png" alt="logo" />
             </div>
-            <a href="#">Login</a>
-            <a href="#">Register</a>
-            <a href="#"> Wish List (0) </a>
-            <img src="icons/Search.svg" alt="Search" />
-            <img src="icons/Bag 2.svg" alt="Bag" />
-            <div class="header__actions-hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
+            <div class="header__actions-right">
+              <a href="#">Login</a>
+              <a href="#">Register</a>
+              <a href="#"> Wish List (0) </a>
+              <img src="icons/Search.svg" alt="Search" />
+              <img src="icons/Bag 2.svg" alt="Bag" />
+              <div class="header__actions-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
           </div>
         </div>
@@ -78,6 +82,7 @@
           </div>
         </div>
       </section>
+
       <sections class="carousel">
         <div class="container">
           <div class="carousel__inner">
@@ -110,6 +115,7 @@
           </div>
         </div>
       </sections>
+
       <section class="products">
         <div class="container">
           <h2 class="title title_fz48">Futured <span>Products</span></h2>
@@ -216,6 +222,7 @@
           </div>
         </div>
       </section>
+
       <section class="reviews">
         <div class="container">
           <h2 class="title title_fz48">Client <span>Review</span></h2>
@@ -301,6 +308,104 @@
                 <div class="offers__item-price">$158.00</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="events">
+        <div class="container">
+          <h2 class="title title_fz48">Featured <span>Events</span></h2>
+
+          <div class="events__slider">
+            <div class="events__item">
+              <div class="events__item-img">
+                <img src="img/events/event.png" alt="event" />
+              </div>
+              <div class="events__item-info">
+                <div class="events__item-title">10th Annual Barrel Tasting</div>
+                <div class="events__item-subtitle">15 Sept</div>
+                <div class="events__item-descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est
+                  sollicitudin blandit ut leo.
+                </div>
+                <div class="events__item-link">
+                  <a href="#">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container">
+          <h2 class="title title_fz48">Contact <span>us</span></h2>
+          <div class="contacts__wrapper">
+            <div class="contacts__descr">
+              <div class="contacts__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est
+                sollicitudin blandit ut leo.Lorem ipsum dolor sit amet,
+                consectetur
+              </div>
+
+              <div class="contacts__number">
+                <img src="icons/contacts/Call.svg" alt="Call" />
+                <a class="contacts__phone" href="01232546987">+012-3254-6987</a>
+              </div>
+
+              <div class="contacts__email">
+                <img src="icons/contacts/Message.svg" alt="Message" />
+                <a href="">Food&drink@gmail.com</a>
+              </div>
+
+              <div class="contacts__address">
+                <img src="icons/contacts/Location.svg" alt="Location" />
+                <address>Brahmanbaira, Dhaka, Bangladesh</address>
+              </div>
+
+              <div class="contacts__social">
+                <a class="contacts__link" href="#"
+                  ><img src="icons/contacts/google.svg" alt="google"
+                /></a>
+                <a class="contacts__link" href="#"
+                  ><img src="icons/contacts/twitter.svg" alt="twitter"
+                /></a>
+                <a class="contacts__link" href="#"
+                  ><img src="icons/contacts/linkedin.svg" alt="linkedin"
+                /></a>
+                <a class="contacts__link" href="#"
+                  ><img src="icons/contacts/facebook.svg" alt="facebook"
+                /></a>
+              </div>
+            </div>
+
+            <form action="#" class="contacts__form">
+              <div class="contacts__input">
+                <input required name="name" id="name" type="text" />
+                <label for="name">Name</label>
+              </div>
+              <div class="contacts__input">
+                <input required name="email" id="email" type="email" />
+                <label for="email">Email</label>
+              </div>
+              <div class="contacts__input">
+                <input required name="phone" id="phone" type="phone" />
+                <label for="phone">Phone</label>
+              </div>
+              <div class="contacts__textarea">
+                <textarea name="text" id="text"></textarea>
+                <label for="text">Messege</label>
+              </div>
+              <div class="contacts__triggers">
+                <button class="contacts__btn btn">Send</button>
+                <div class="contacts__policy">
+                  <input required type="checkbox" />
+                  <span>I agree to <a href="#">Privacy Policy</a></span>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </section>

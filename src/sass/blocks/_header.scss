@@ -1,9 +1,39 @@
 .header {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
   &__actions {
     padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &-left {
+      flex: 0 0 40%;
+      max-width: 40%;
+      display: flex;
+      justify-content: start;
+
+      @include poppins;
+      font-size: 15px;
+      line-height: 18px;
+      align-items: center;
+    }
+    &-logo {
+      flex: 0 0 20%;
+      max-width: 20%;
+      display: flex;
+      justify-content: center;
+    }
+    &-right {
+      flex: 0 0 40%;
+      max-width: 40%;
+      display: flex;
+      justify-content: space-around;
+      margin-left: 18px;
+
+      @include poppins;
+      font-size: 15px;
+      line-height: 18px;
+      align-items: center;
+    }
     &-hamburger {
       height: 16px;
       right: 21px;
@@ -23,10 +53,6 @@
       }
     }
   }
-  &__menu {
-    display: flex;
-    border: white;
-  }
 }
 
 .menu {
@@ -40,7 +66,7 @@
   width: 100%;
   border-style: solid none solid none;
   border-color: white;
-  padding: 25px;
+  padding: 25px 0;
   &__item {
     font-size: 16px;
     line-height: 9px;

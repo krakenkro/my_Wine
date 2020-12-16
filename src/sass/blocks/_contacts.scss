@@ -1,0 +1,135 @@
+.contacts {
+  padding-top: 150px;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 430px 670px;
+    column-gap: 40px;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+  &__descr {
+    color: #ffffff;
+  }
+  &__text {
+    @include poppins;
+    font-size: 18px;
+    line-height: 35px;
+  }
+  &__number {
+    display: flex;
+    align-items: center;
+    @include poppins;
+    margin-top: 70px;
+    font-size: 18px;
+    line-height: 30px;
+    img {
+      margin-right: 25px;
+    }
+  }
+  &__email {
+    display: flex;
+    align-items: center;
+    @include poppins;
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    img {
+      margin-right: 25px;
+    }
+  }
+  &__address {
+    display: flex;
+    align-items: center;
+    @include poppins;
+    margin-top: 40px;
+    display: flex;
+    font-size: 18px;
+    line-height: 30px;
+    img {
+      margin-right: 25px;
+    }
+  }
+  &__social {
+    margin-top: 60px;
+  }
+  &__link {
+    margin-right: 55px;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(1, 670px);
+    grid-template-rows: 65px 65px 65px 135px 80px;
+    justify-content: space-between;
+    row-gap: 27px;
+    label {
+      position: absolute;
+      font-size: 24px;
+      line-height: 36px;
+      color: #ffffff;
+      margin-bottom: 0;
+      top: -17px;
+      left: 39px;
+      background-color: black;
+      padding: 0 8px;
+    }
+  }
+  &__input {
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      padding: 0 20px;
+
+      @include poppins;
+      font-size: 15px;
+    }
+  }
+  &__textarea {
+    position: relative;
+    textarea {
+      width: 100%;
+      height: 100%;
+      resize: none;
+      background-color: #000000;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      padding: 20px;
+      @include poppins;
+      font-size: 15px;
+    }
+  }
+  &__triggers {
+    display: flex;
+    align-items: center;
+  }
+  &__btn {
+    width: 200px;
+    height: 82px;
+    background-color: $main-color;
+    border: none;
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 60px;
+  }
+  &__policy {
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    input {
+      margin-right: 10px;
+    }
+    a {
+      color: #007bff;
+    }
+  }
+}
