@@ -10,6 +10,8 @@
   }
   &__descr {
     color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   &__text {
     @include poppins;
@@ -58,7 +60,7 @@
   }
   &__form {
     display: grid;
-    grid-template-columns: repeat(1, 670px);
+    grid-template-columns: 1fr;
     grid-template-rows: 65px 65px 65px 135px 80px;
     justify-content: space-between;
     row-gap: 27px;
