@@ -2,6 +2,33 @@
   padding-top: 150px;
   &__slider {
     margin-top: 55px;
+    position: relative;
+    padding: 0 57px;
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      margin: -40px 0 0 0;
+      z-index: 10;
+      width: 80px;
+      height: 80px;
+    }
+    .slick-arrow.slick-prev {
+      left: -45px;
+      font-size: 0;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: url("../icons/events/left.svg") center center/cover no-repeat;
+    }
+    .slick-arrow.slick-next {
+      right: -45px;
+      font-size: 0;
+      border: none;
+      transform: scale(-1, 1);
+      outline: none;
+      cursor: pointer;
+      background: url("../icons/events/left.svg") 0 0 / 100% no-repeat;
+    }
   }
   &__item {
     display: flex;

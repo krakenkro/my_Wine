@@ -18,4 +18,11 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     focusOnSelect: false,
   });
+  $(".events__slider").slick({
+    adaptiveHeight: false,
+    speed: 2500,
+    arrows: true,
+    autoplay: false,
+    autoplaySpeed: 2000,
+  });
 });
